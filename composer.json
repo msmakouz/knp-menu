@@ -1,22 +1,23 @@
 {
-  "name": ":vendor_slug/:package_slug",
-  "description": ":package_description",
+  "name": "spiral-packages/knp-menu",
+  "description": "The package provides object-oriented menus for projects based on the Spiral Framework",
   "keywords": [
-    ":vendor_name",
     "spiral",
-    ":package_slug"
+    "menu",
+    "knp-menu"
   ],
-  "homepage": "https://github.com/:vendor_slug/:package_slug",
+  "homepage": "https://github.com/spiral-packages/knp-menu",
   "license": "MIT",
   "authors": [
     {
-      "name": ":author_name",
-      "email": "author@domain.com",
+      "name": "Maxim Smakouz",
+      "email": "m.smakouz@gmail.com",
       "role": "Developer"
     }
   ],
   "require": {
     "php": "^8.0",
+    "knplabs/knp-menu": "^3.3",
     "spiral/boot": "^2.9",
     "spiral/console": "^2.9"
   },
@@ -24,17 +25,17 @@
     "mockery/mockery": "^1.5",
     "phpunit/phpunit": "^9.5",
     "spiral/testing": "^1.0",
-    "vimeo/psalm": "^4.9"
+    "vimeo/psalm": "^4.20"
   },
   "autoload": {
     "psr-4": {
-      "VendorName\\Skeleton\\": "src"
+      "Spiral\\KnpMenu\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "VendorName\\Skeleton\\Tests\\App\\": "tests/app",
-      "VendorName\\Skeleton\\Tests\\": "tests/src"
+      "Spiral\\KnpMenu\\Tests\\App\\": "tests/app",
+      "Spiral\\KnpMenu\\Tests\\": "tests/src"
     }
   },
   "scripts": {
@@ -47,7 +48,7 @@
   "extra": {
     "spiral": {
       "bootloaders": [
-        "VendorName\\Skeleton\\Bootloader\\SkeletonBootloader"
+        "Spiral\\KnpMenu\\Bootloader\\KnpMenuBootloader"
       ]
     }
   },

@@ -1,8 +1,14 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+declare(strict_types=1);
 
-class TestCase extends \Spiral\Testing\TestCase
+namespace Spiral\KnpMenu\Tests;
+
+use Spiral\Boot\Bootloader\ConfigurationBootloader;
+use Spiral\KnpMenu\Bootloader\KnpMenuBootloader;
+use Spiral\Testing\TestCase as BaseTest;
+
+class TestCase extends BaseTest
 {
     public function rootDirectory(): string
     {
@@ -12,8 +18,8 @@ class TestCase extends \Spiral\Testing\TestCase
     public function defineBootloaders(): array
     {
         return [
-            \Spiral\Boot\Bootloader\ConfigurationBootloader::class,
-            \VendorName\Skeleton\SkeletonBootloader::class,
+            ConfigurationBootloader::class,
+            KnpMenuBootloader::class,
             // ...
         ];
     }
