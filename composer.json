@@ -22,6 +22,7 @@
     "spiral/console": "^2.9"
   },
   "require-dev": {
+    "spiral/framework": "^2.9",
     "mockery/mockery": "^1.5",
     "phpunit/phpunit": "^9.5",
     "spiral/testing": "^1.0",
